@@ -1,9 +1,9 @@
 $(function() {
     $('#mainimg').vegas({
         slides: [
-            { src: './images/ih1.jpg' },	//1枚目の写真指定
-            { src: './images/ih2.jpg' },	//2枚目の写真指定
-            { src: './images/ih3.jpg' },	//3枚目の写真指定
+            { src: '/images/ih1.jpg' },	//1枚目の写真指定
+            { src: '/images/ih2.jpg' },	//2枚目の写真指定
+            { src: '/images/ih3.jpg' },	//3枚目の写真指定
         ],
 		transition: 'blur',			//https://vegas.jaysalvat.com/documentation/transitions/から好みのtransitionを選んで置き換えられます。
 		animation: 'kenburns',		//https://vegas.jaysalvat.com/documentation/transitions/から好みのanimationを選んで置き換えられます。
