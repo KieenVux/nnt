@@ -699,6 +699,22 @@ footer .pr {display: block;}
 	opacity: 0.8;	/*マウスオン時に80%だけ色を出す。つまり薄くなります。*/
 }
 
+/*モバイル時はサムネイルを横スクロール可能にする*/
+@media screen and (max-width:600px) {
+	.thumbnail {
+		justify-content: flex-start;	/*先頭から並べる*/
+		flex-wrap: nowrap;				/*折り返さず横並びにする*/
+		overflow-x: auto;				/*横スクロール可*/
+		-webkit-overflow-scrolling: touch;	/*iOSで慣性スクロール*/
+		gap: 6px;						/*画像間の余白*/
+		padding-bottom: 6px;			/*スクロールバーと画像の間隔*/
+	}
+	.thumbnail img {
+		flex: 0 0 auto;					/*縮まない固定幅要素として扱う*/
+		width: 90px;					/*少し小さめにする*/
+	}
+}
+
 
 /*詳細ページ（item.html）で使っている「前のページに戻る」ボタン
 ---------------------------------------------------------------------------*/
